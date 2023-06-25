@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta content="AdzilaRahma" name="Author"/>
+      <meta http-equiv="pragma" content="no-cache">
+      <meta http-equiv="expires" content="-1">
+      <title>$(hostname) - Log out</title>
+      <!-- favicon-->
+      <link rel="shortcut icon" type="image/png" href="https://i.ibb.co/tcCQYQF/favicon.png"/>
+      <!-- Stylesheet-->
+      <link rel="stylesheet" href="css/bootstrap.css" />
+      <link rel="stylesheet" href="css/style.css" />
+      
+      <script>
+        function openLogin() {
+    	if (window.name != 'hotspot_logout') return true;
+    	open('$(link-login)', '_blank', '');
+    	window.close();
+    	return false;
+        }
+    </script>
+      
+   </head>
+   <body>
+      <div class="mikrotik">
+          <div class="app">
+              <img class="app-icon" src="https://i.ibb.co/tYPHthS/ap4.gif" alt="ap4">
+              <!--
+              <img class="app-icon" src="https://i.ibb.co/MpmGys3/bye.gif" alt="bye">
+              <img class="app-icon" src="img/bye.gif" alt="bye">
+              -->
+          </div>
+              <h1>Anda Telah Keluar!</h1> 
+                    <table class="table">
+                        <tr><td class="right"> <i class="glyphicon glyphicon-tasks"></i></td><td> </td></tr>
+                        <tr><td class="right">Username</td><td>$(username)</td></tr>
+                        <tr><td class="right">IP address</td><td>$(ip)</td></tr>
+                        <tr><td class="right">MAC address</td><td>$(mac)</td></tr>
+                        <tr><td class="right">Session time</td><td>$(uptime)</td></tr>
+                        $(if session-time-left)
+                        <tr><td class="right">Time left</td><td>$(session-time-left)</td></tr>
+                        $(endif)
+                        <tr><td class="right">Download</td><td>$(bytes-out-nice)</td></tr>
+                        <tr><td class="right">Upload</td><td>$(bytes-in-nice)</td></tr>
+                    </table>
+                    
+                <form action="$(link-login)" name="login" onSubmit="return openLogin()">
+                <button id="LoginBtn" type="submit" class="Submit-Btn"> Masuk Kembali</button>
+                <!--
+                <input id="LoginBtn" type="submit" class="Submit-Btn" value="Masuk Kembali">
+                -->
+                </form>
+             <footer>
+                <p>Ada Ganguan Layanan Internet Kami?<br /><i class="fa fa-whatsapp">Whatsapp kami 082299722675</i></p>
+                <h6>&copy; Copyright 2023 | <a style="color: grey" href="#">Adzila Rahma</a> - All rights reserved</h6>
+             </footer>
+          </div>
+      <!-- Main -->
+      <script src="js/bootstrap.js"></script>
+      <script src="js/main.js"></script>
+   </body>
+</html>

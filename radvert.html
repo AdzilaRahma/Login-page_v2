@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="refresh" content="3; url=$(link-orig)">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta content="AdzilaRahma" name="Author"/>
+      <meta http-equiv="pragma" content="no-cache">
+      <meta http-equiv="expires" content="-1">
+      <title>$(hostname) - Advertisement</title>
+      <!-- favicon -->
+      <link rel="shortcut icon" type="image/png" href="https://i.ibb.co/tcCQYQF/favicon.png"/>
+      <!-- Stylesheet-->
+      <link rel="stylesheet" href="css/bootstrap.css" />
+      <link rel="stylesheet" href="css/style.css" />
+      
+      <script>
+      
+          var popup = '';
+            function openOrig() {
+        	if (window.focus) popup.focus();
+        	location.href = unescape('$(link-orig-esc)');
+            }
+            function openAd() {
+        	location.href = unescape('$(link-redirect-esc)');
+            }
+            function openAdvert() {
+        	if (window.name != 'hotspot_advert') {
+        		popup = open('$(link-redirect)', 'hotspot_advert', '');
+        		setTimeout("openOrig()", 1000);
+        		return;
+        	}
+        	setTimeout("openAd()", 1000);
+            }
+            
+      </script>
+      
+   </head>
+   <body onLoad="openAdvert()">
+      <div class="mikrotik">
+              <h1>Advertisement</h1>
+                <p class="info">If nothing happens, open<br><a href="$(link-redirect)" target="hotspot_advert">advertisement</a> manually.</p>
+             <footer>
+                <p>Ada Ganguan Layanan Internet Kami?<br /><i class="fa fa-whatsapp">Whatsapp kami 082299722675</i></p>
+                <h6>&copy; Copyright 2023 | <a style="color: grey" href="#">Adzila Rahma</a> - All rights reserved</h6>
+             </footer>
+          </div>
+      <!-- Main -->
+      <script src="js/bootstrap.js"></script>
+      <script src="js/main.js"></script>
+   </body>
+</html>

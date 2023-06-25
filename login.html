@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta content="AdzilaRahma" name="Author"/>
+      <title>$(hostname) - Login</title>
+      <!-- favicon-->
+      <link rel="shortcut icon" type="image/png" href="https://i.ibb.co/tcCQYQF/favicon.png"/>
+      <!-- Stylesheet-->
+      <link rel="stylesheet" href="css/bootstrap.css" />
+      <link rel="stylesheet" href="css/style.css" />
+   </head>
+   <body>
+      <div class="mikrotik">
+         <div class="app">
+            <img class="app-logo" src="https://i.ibb.co/6vP969x/risma.png" alt="risma" />
+            <div class="app-dots">
+               <marquee class="text-run" behavior="scroll" direction="left">
+                  Gunakan Layanan Akses Internet Wifi Secukupnya & Jangan Lupa Untuk Beristirahat
+               </marquee>
+            </div>
+         </div>
+         <!-- //menampilkan Jam -->
+         <div class="clock">
+            <div id="day"></div>
+            <div id="time"></div>
+            <div id="midday"></div>
+         </div>
+         <!-- //menampilkan Jam -->
+         <div id="LoginFrom">
+            <form autocomplete="off" id="userLogin" name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>
+            <input type="hidden" name="dst" value="$(link-orig)" />
+            <input type="hidden" name="popup" value="true" />
+            <p class="info $(if error)alert$(endif)">
+               $(if error == "")$(if trial == 'yes')<br />Gratis 5 Menit, <a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">klik disini</a>.$(endif)
+               $(endif)
+               $(if error)$(error)$(endif)
+            </p>
+            <p class="autotype">Voucher <span class="auto-type"></span></p>
+            <input id="Username" name="username" type="text" pattern="^[abcizABCZ][a-zA-Z0-9]{2,13}$" 
+                value="$(username)"
+                oncopy="return false" 
+                oncut="return false" 
+                onpaste="return false" 
+                ondragstart="return false" 
+                ondrop="return false" 
+                required>
+            <input id="Password" name="password" type="hidden">
+            <!--
+            <input id="LoginBtn" onclick="return ValidateLoginForm();" type="submit" class="Submit-Btn" value="Aktifkan Voucher">
+               -->
+            <button id="LoginBtn" onclick="return ValidateLoginForm();" type="submit" class="Submit-Btn"><img class="smlogin" src="https://i.ibb.co/S36qpgp/login.gif" alt="login">Aktivasi Kode</button>
+            </form>
+         </div>
+         <footer>
+            <p>Ada Ganguan Layanan Internet Kami?<br /><i class="fa fa-whatsapp">Whatsapp kami 082299722675</i></p>
+            <h6>&copy; Copyright 2023 | <a style="color: grey" href="#">Adzila Rahma</a> - All rights reserved</h6>
+         </footer>
+      </div>
+      <script type="text/javascript">
+         const hostname = window.location.hostname;
+             document.login.username.focus();
+             // Created By Adzila Rahma
+             if ('$(error)' == 'no more sessions are allowed for user $(username)') {
+                 window.location.href = './aktif.html';
+             } else if ('$(error)' == 'user $(username) has reached uptime limit') {
+                 window.location.href = './habis.html';
+             } else if ('$(error)' == 'invalid username or password') {
+                 window.location.href = './salah.html';
+             } else {
+                 
+             }
+             function doLogin() {
+                 document.sendin.username.value = document.login.username.value;
+                 document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+                 document.sendin.submit(); return false;
+             }
+             
+      </script>
+      $(if chap-id)
+      <form name="sendin" action="$(link-login-only)" method="post" style="display:none">
+         <input type="hidden" name="username" />
+         <input type="hidden" name="password" />
+         <input type="hidden" name="dst" value="$(link-orig)" />
+         <input type="hidden" name="popup" value="true" />
+      </form>
+      $(endif)
+      <!-- Main -->
+      <script src="js/bootstrap.js"></script>
+      <script src="js/main.js"></script>
+   </body>
+</html>

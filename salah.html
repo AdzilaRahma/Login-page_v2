@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="refresh" content="15; url=$(link-login)">
+      <meta content="AdzilaRahma" name="Author"/>
+      <meta http-equiv="pragma" content="no-cache">
+      <meta http-equiv="expires" content="-1">
+      <title>$(hostname) - Voucher Salah</title>
+      <!-- favicon-->
+      <link rel="shortcut icon" type="image/png" href="https://i.ibb.co/tcCQYQF/favicon.png"/>
+      <!-- Stylesheet-->
+      <link rel="stylesheet" href="css/bootstrap.css" />
+      <link rel="stylesheet" href="css/style.css" />
+      <script>
+         function backLogin() {
+         if (window.name != 'hotspot_status') return true;
+         open('$(link-login)', '_blank', '');
+         window.close();
+         return false;
+         }
+      </script>
+   </head>
+   <body>
+      <div class="mikrotik">
+         <div class="app">
+            <img class="app-icon" src="https://i.ibb.co/ZxpNMg5/salah.gif" alt="salah">
+         </div>
+         <div class="nf" style="border: 2px solid #000000; padding: 5px 2px; margin-top: 15px;">
+            <h6 style="margin:10px 0; font-weight:800;">PELANGGAN YANG TERHORMAT</h6>
+            <p style="letter-spacing:1px; line-height:25px; font-weight:500;">
+               VOUCHER YANG ANDA MASUKAN TIDAK TERDAFTAR DI SERVER.
+               KEMUNGKINAN VOUCHER TELAH DI HAPUS DARI SERVER KARENA TELAH MENCAPAI MASA AKTIF PENGGUNA ATAU EXPIRED. SILAHKAN MEMBELI VOUCHER BARU UNTUK MENIKMATI AKSES INTERNET. 
+            </p>
+         </div>
+         <form action="$(link-login)" name="login" onSubmit="return backLogin()">
+            <button id="LoginBtn" type="submit" class="Submit-Btn">Kembali</button>
+            <!--
+               <input id="LoginBtn" type="submit" class="Submit-Btn" value="Masuk Kembali">
+               -->
+         </form>
+         <footer>
+            <p>Ada Ganguan Layanan Internet Kami?<br /><i class="fa fa-whatsapp">Whatsapp kami 082299722675</i></p>
+            <h6>&copy; Copyright 2023 | <a style="color: grey" href="#">Adzila Rahma</a> - All rights reserved</h6>
+         </footer>
+      </div>
+      <!-- Main -->
+      <script src="js/bootstrap.js"></script>
+      <script src="js/main.js"></script>
+   </body>
+</html>

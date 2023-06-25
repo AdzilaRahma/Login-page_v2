@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta content="AdzilaRahma" name="Author"/>
+      <meta http-equiv="pragma" content="no-cache">
+      <meta http-equiv="expires" content="-1">
+      <title>$(hostname) - Redirect</title>
+      <!-- favicon -->
+      <link rel="shortcut icon" type="image/png" href="https://i.ibb.co/tcCQYQF/favicon.png"/>
+      <!-- Stylesheet-->
+      <link rel="stylesheet" href="css/bootstrap.css" />
+      <link rel="stylesheet" href="css/style.css" />
+      
+      <script>
+          function startClock() {
+                $(if popup == 'true')
+                open('$(link-status)', 'hotspot_status', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=290,height=200');
+            $(endif)
+            location.href = unescape('$(link-redirect-esc)');
+            }
+            
+      </script>
+      
+   </head>
+   <body onLoad="startClock()">
+      <div class="mikrotik">
+          <div class="app">
+              <img src="img/wink.gif" alt="zilnet" class="app-icon"> 
+          </div>
+              <h1>You are logged in</h1>
+                <p class="info">If nothing happens <br>click <a href="$(link-redirect)">here</a></p><hr>
+             <footer>
+                <p>Ada Ganguan Layanan Internet Kami?<br /><i class="fa fa-whatsapp">Whatsapp kami 082299722675</i></p>
+                <h6>&copy; Copyright 2023 | <a style="color: grey" href="#">Adzila Rahma</a> - All rights reserved</h6>
+             </footer>
+          </div>
+      <!-- Main -->
+      <script src="js/bootstrap.js"></script>
+      <script src="js/main.js"></script>
+   </body>
+</html>
