@@ -13,11 +13,13 @@
 ![Android](https://github.com/AdzilaRahma/Library/blob/main/Preview/Login-page_v2/logout.gif)
 
 
-![Dekstop](https://github.com/AdzilaRahma/Library/blob/main/Preview/Login-page_v2/logout.gif)
+![Dekstop](https://github.com/AdzilaRahma/Library/blob/main/Preview/Login-page_v2/status.gif)
+
 
 My Login is a Bootstrap 5 Simple Login Page Mikrotik, you can use it as you wish and it's free for personal or commercial use.
 
 ![Preview](https://i.ibb.co/R0fGKqG/status.gif)(https://i.ibb.co/mty4Zns/logout.gif)
+
 
 # Installation
 Let's make it easy! Just download this template, use it on your project.
