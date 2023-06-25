@@ -1,0 +1,244 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+   border: none;
+   outline: none;
+}
+
+body {
+   background-color: #f1f1f1;
+   /*
+  background-color: #9873fe;
+*/
+}
+
+footer h6 {
+   width: 100%;
+   margin-top: 50px;
+   text-align: center;
+   font-size: 10px;
+
+}
+
+footer p {
+   width: 100%;
+   margin: 9px 0;
+   text-align: center;
+   font-size: 10px;
+   font-weight: bold;
+
+}
+td {
+    width: 50%;
+    font-size: 16px;
+    font-weight: 500;
+    align-items: center;
+    right: 20px;
+    
+}
+h1 {
+    font-size: 21px;
+    text-align:center;
+    margin-bottom:-5px;
+    margin-top:2px
+    
+}
+/**/
+.mikrotik {
+   width: 90%;
+   max-width: 25em;
+   background-color: #ffffff;
+   box-shadow: 0 0 6px 6px rgba(53, 53, 53, 0.221);
+   position: absolute;
+   transform: translate(-50%, -50%);
+   left: 50%;
+   top: 50%;
+   padding: 2em;
+   border-radius: 0.8em;
+   text-align: center;
+   justify-content: center;
+
+}
+
+.app {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   
+}
+
+.app-logo {
+   width: 160px;
+   
+}
+.app-icon {
+   width: 125px;
+   margin-top:4px;
+   margin-bottom: 6px;
+   
+}
+
+
+.app-dots {
+   margin: 5px 5px;
+   border-top: 2px dotted;
+   border-bottom: 2px dotted;
+   border-color: #c5c5c5;
+
+}
+
+.text-run {
+   font-size: 0.6em;
+   font-weight: 600;
+   text-transform: uppercase;
+   margin-top: 0.3em;
+   margin-bottom: -0.1em;
+
+}
+
+.clock {
+   width: 100%;
+   background-color: rgba(255, 255, 255, 0.00);
+   padding: 4px 0;
+   margin-bottom: 50px;
+   box-shadow: 0 25px 30px rgba(0, 0, 0, 0.0);
+   justify-content: center;
+   text-align: center;
+   align-content: center;
+
+}
+
+#day {
+   position: relative;
+   font-size: 10px;
+   font-weight: 900;
+   text-transform: uppercase;
+   color: #c5c5c5;
+   text-align: center;
+   
+}
+
+.wrapper {
+   text-align: center;
+   
+}
+
+#time {
+   font-size: 13px;
+   font-weight: 600;
+   display: inline-block;
+   
+}
+
+#midday {
+   font-size: 7px;
+   font-weight: 900;
+   display: inline-block;
+   
+}
+
+input {
+   width: 100%;
+   font-size: 15px;
+   font-weight: 500;
+   letter-spacing: 2px;
+   text-align: center;
+   border-bottom: 1.3px solid #02002c;
+   display: block;
+   padding: 0.5em;
+   color: #000000;
+   
+}
+
+input:hover:focus:valid {
+   color: #000000;
+   font-size: 15px;
+   font-weight: 500;
+   border: 1.5px solid #000000;
+   border-radius: 5px;
+   transition: .6s ease-in-out;
+   
+}
+
+input:hover:focus:invalid {
+   color: #f12222;
+   font-size: 16px;
+   font-weight: 900;
+   border: 2px solid #ff5b5b;
+   border-radius: 5px;
+   transition: .6s ease-in-out;
+   
+}
+
+.info {
+   font-size: 12px;
+   font-weight: 600;
+   text-align: center;
+   margin: 21px;
+   
+}
+
+.autotype {
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   font-size: 12.70px;
+   font-weight: 700;
+   margin: 20px auto;
+
+}
+
+span {
+   color: #000000;
+}
+
+.error-input {
+   border: 2px solid #ff5b5b;
+   
+}
+
+.error-message {
+   font-size: 11px;
+   font-weight: bold;
+   color: #ff5b5b;
+   text-align: left;
+   margin: 0;
+   padding: 0;
+   margin-top: 2px;
+   
+}
+
+.Submit-Btn {
+   width: 100%;
+   height: 43px;
+   border-radius: 10px;
+   cursor: pointer;
+   user-select: none;
+   font-size: 15px;
+   letter-spacing: 1px;
+   margin-top: 15px;
+   display: inline-block;
+   font-weight: bolder;
+   transition: 0.4s;
+   background-color: #2b61f0;
+   color: #fff;
+}
+
+.Submit-Btn:hover {
+   background-color: #7334fc;
+   color: #fff;
+
+}
+
+.smlogin {
+   width: 2.5em;
+   margin-right: -13px;
+   transform: translate(-20%, -4%);
+}
+.smlogout {
+   width: 2.5em;
+   margin-left: -13px;
+   transform: translate(17%, -2%);
+}
