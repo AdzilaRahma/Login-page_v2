@@ -1,0 +1,5 @@
+# # # software id = EL26-GWZA # # # 
+
+/ip hotspot walled-garden
+add dst-host=ibb.co
+add dst-host=i.ibb.co
