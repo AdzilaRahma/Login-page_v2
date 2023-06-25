@@ -6,6 +6,10 @@
 
 ![GitHub license](https://github.com/AdzilaRahma/Login-page_v2/blob/main/LICENSE)
 
+![Android](https://github.com/AdzilaRahma/Login-page_v2/blob/main/Preview/Login.gif)
+
+![Android](https://github.com/AdzilaRahma/Login-page_v2/blob/main/Preview/status.gif)
+
 ![Android](https://github.com/AdzilaRahma/Login-page_v2/blob/main/Preview/logout.gif)
 
 ![Dekstop](https://github.com/AdzilaRahma/Login-page_v2/blob/main/Preview/logout.gif)
