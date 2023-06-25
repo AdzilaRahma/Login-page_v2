@@ -5,8 +5,8 @@
 # Simple form login page
 
 [![GitHub license](https://github.com/AdzilaRahma/Login-page_v2/blob/main/LICENSE)
-![Android](https://github.com/AdzilaRahma/Simple-captcha-form-login/blob/main/Preview/Android.jpg)
-![Dekstop](https://github.com/AdzilaRahma/Simple-captcha-form-login/blob/main/Preview/Dekstop.jpg)
+![Android](https://github.com/AdzilaRahma/Login-page_v2/blob/main/Preview/logout.gif)
+![Dekstop](https://github.com/AdzilaRahma/Login-page_v2/blob/main/Preview/logout.gif)
 My Login is a Bootstrap 5 Simple Login Page Mikrotik, you can use it as you wish and it's free for personal or commercial use.
 
 ![Preview](https://ibb.co/Xp5t0nB)(https://ibb.co/Xp5t0nB)
