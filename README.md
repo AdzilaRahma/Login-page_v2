@@ -9,7 +9,7 @@
 ![Dekstop](https://github.com/AdzilaRahma/Simple-captcha-form-login/blob/main/Preview/Dekstop.jpg)
 My Login is a Bootstrap 5 Simple Login Page Mikrotik, you can use it as you wish and it's free for personal or commercial use.
 
-![Preview](https://ibb.co/WgtjmsF)(https://ibb.co/hLQscGW)
+![Preview](https://ibb.co/Xp5t0nB)(https://ibb.co/Xp5t0nB)
 
 # Installation
 Let's make it easy! Just download this template, use it on your project.
