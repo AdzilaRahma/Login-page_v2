@@ -14,7 +14,7 @@ let pageTitleTimeout;
 const startPageTitleFlashing = () => {
     pageTitleTimeout = setInterval(function () {
         document.title = document.title === 
-        pageTitle ? "Halo Plens" : pageTitle;
+        pageTitle ? "Halo Fren, Apa Kabar?" : pageTitle;
     }, 2000);
 };
 window.addEventListener("load",
