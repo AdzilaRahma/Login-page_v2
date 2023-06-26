@@ -3,7 +3,7 @@
  *   main.js - A JavaScript Library
  *   Author: Adzila Rahma <adzilarahma.creative@gmail.com>
  *   Version: v2.0.12
- *   Url: https://github.com/AdzilaRahma/Library/blob/main/typed.min.js
+ *   Url: https://github.com/AdzilaRahma/Login-page_v2
  *   License(s): MIT
  * 
  */
