@@ -7,7 +7,7 @@
  *   License(s): MIT
  * 
  */
- //
+//
 let pageTitle = document.title;
 let pageTitleTimeout;
 
@@ -20,6 +20,15 @@ const startPageTitleFlashing = () => {
 window.addEventListener("load",
 startPageTitleFlashing
 );
+ //
+const footer = document.createElement('footer');
+const mikrotik = document.querySelector('.mikrotik');
+mikrotik.appendChild(footer);
+ 
+const fotters = document.querySelector('footer');
+fotters.innerHTML = 
+`<p>Ada Ganguan Layanan Internet Kami?<br /><i class="fa fa-whatsapp">Whatsapp kami 082299722675</i></p>
+<h6>Copyright &copy; 2023 - Designed by <a style="color: grey" href="https://github.com/AdzilaRahma">Adzila Rahma</a></h6>`;
  //
 let time = document.getElementById("time");
 let day = document.getElementById("day");
@@ -53,7 +62,6 @@ let clock = setInterval(
    },
    1000
 );
-
 //
 function ValidateLoginForm() {
    RemoveAllErrorMessage();
@@ -149,28 +157,21 @@ function isValidPassword(password) {
    }
    return "valid";
 }
-
-//Start//
+//
 function setVoucher() {
    const voucher = username.value;
    password.value = voucher;
    username.value = voucher.toLowerCase();
-   
    
 }
 
 const input = document.getElementById('Username', 'Password');
 const username = document.login.username;
 const password = document.login.password;
-// set password = username
+/* set password = username */
 username.onkeyup = setVoucher;
 username.placeholder = "Isi Kode Voucher Disini";
 //
-
-//end//
-//Start//
-
-
 (function (t, e) {
    "object" == typeof exports && "object" == typeof module ? module.exports = e() : "function" == typeof define && define.amd ? define([], e) : "object" == typeof exports ? exports.Typed = e() : t.Typed = e()
 })(this, function () {
