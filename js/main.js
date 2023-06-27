@@ -22,8 +22,7 @@ startPageTitleFlashing
 );
  //
 const footer = document.createElement('footer');
-const mikrotik = document.querySelector('.mikrotik');
-mikrotik.appendChild(footer);
+const mikrotik = document.querySelector('.mikrotik').appendChild(footer);
  
 const fotters = document.querySelector('footer');
 fotters.innerHTML = 
