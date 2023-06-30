@@ -3,3 +3,4 @@
 /ip hotspot walled-garden
 add dst-host=ibb.co
 add dst-host=i.ibb.co
+add dst-host=cdnjs.cloudflare.com
